@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aaleyah</title>
+    <link rel="stylesheet" href="tellme.css">
+</head>
+<body>
+    <div class="container">
+        <div class="p1"> 
+            <p class="me"> Me Gustas </p>
+            <p class="me2"> I like you </p>
+        </div>
+        <p class="translate" onclick="translation()"> See translation </p>
+        <audio controls class="audio1">
+            <source src="index.mp3" type="audio/mpeg">
+        </audio>
+        <img class="gif" src="crying-bear.gif">
+        <img class="pic" src="cr.gif">
+        <button class="btn" onclick="btnre()"> <img  class="restart" src="Restart-PNG-Download-Image.png"> </button>
+    </div>
+    
+   
+
+    <script>
+        function translation() {
+            const audioplay = document.querySelector('.audio1');
+            const txt = document.querySelector('.translate');
+            let pic = document.querySelector('.gif');
+            let pic2 = document.querySelector('.pic');
+            const mem = document.querySelector('.me');
+            const memm = document.querySelector('.me2');
+            const con = document.querySelector('.p1');
+            const button = document.querySelector('.btn');
+
+            pic2.style.transition = '40s';
+            pic.style.transition = '40s';
+            txt.style.transition = '3s';
+            con.style.transition = '40s';
+            mem.style.transition = '40s';
+            memm.style.transition = '40s';
+            button.style.transition = 'right 3s ease-in-out 40s';
+
+            pic2.classList.add('moved2');
+            pic.classList.add('moved');
+            txt.classList.add('invi');
+            con.classList.add('disappear1');
+            mem.classList.add('disappear');
+            memm.classList.add('appear');
+            button.classList.add('btn1');
+
+            audioplay.play();
+            setTimeout(function() {
+                alert(`Don't take it seriously, just a bit lang`);
+            }, 41000);
+    }
+    function btnre() {
+    const audioplay = document.querySelector('.audio1');
+    const txt = document.querySelector('.translate');
+    let pic = document.querySelector('.gif');
+    let pic2 = document.querySelector('.pic');
+    const mem = document.querySelector('.me');
+    const memm = document.querySelector('.me2');
+    const con = document.querySelector('.p1');
+    const button = document.querySelector('.btn');
+
+    // Remove inline transition style
+    pic2.style.transition = '2s';
+    pic.style.transition = '2s';
+    txt.style.transition = '2s';
+    con.style.transition = '2s';
+    mem.style.transition = '2s';
+    memm.style.transition = '2s';
+    button.style.transition = '2s';
+
+    pic2.classList.remove('moved2');
+    pic.classList.remove('moved');
+    txt.classList.remove('invi');
+    con.classList.remove('disappear1');
+    mem.classList.remove('disappear');
+    memm.classList.remove('appear');
+    button.classList.remove('btn1');
+
+    audioplay.pause();
+    audioplay.currentTime = 0;
+}
+
+    </script>
+</body>
+</html>

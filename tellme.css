@@ -1,0 +1,120 @@
+.container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.p1 {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.50);
+    transition: all 55s;
+}
+.me {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 55s, color 55s, top 40s;
+}
+.me2 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: red;
+    transition: opacity 55s, top 40s;
+}
+.translate {
+    color: gray;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.translate:active {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+.audio1 {
+    height: 20px;
+    width: 20px;
+    opacity: 0;
+}
+.gif {
+    position: absolute;
+    top: -140px;
+    height: 300px;
+    width: 500px;
+    left: -1000px;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    position: absolute;
+    transition: all 40s;
+    border-radius: 200px;
+}
+.moved {
+    position: absolute;
+    left: 0;
+}
+.pic {
+    border-radius: 200px;
+    right: -1000px;
+    position: absolute;
+    bottom: -130px;
+    height: 300px;
+    width: 500px;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    position: absolute;
+    transition: all 40s;
+}
+.moved2 {
+    position: absolute;
+    right: 0;
+}
+.invi {
+    opacity: 0;
+}
+.disappear {
+    top: 45%;
+    opacity: 0;
+    color: red;
+}
+.disappear1 {
+    border: none;
+    box-shadow: none;
+}
+.appear {
+    opacity: 1;
+    top: 45%;
+}
+.btn {
+    position: absolute;
+    top: -140px;
+    right: -600px;
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: right 3s ease-in-out 40s;
+}
+.restart {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: multiply;
+}
+.btn1 {
+    right: -400px;
+}
